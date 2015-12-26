@@ -1,10 +1,10 @@
 # Reproducible Research Example
 
-This is an small example to create a LaTeX document using python, pythontex inside a Docker container from a linux host.
+This is an small example to create a LaTeX document using python and pythontex inside a Docker container from a linux host.
 
 For great resources on how to do reproducible research with Python see the videos from the scipy conference and their git repositories:
 
-- [https://www.youtube.com/watch?v=G-UDHc2UVOg](https://www.youtube.com/watch?v=G-UDHc2UVOg) by Geoffre Poore (https://github.com/gpoore/pythontex).
+- [Reproducible Documents with PythonTeX; SciPy 2013 Presentation](https://www.youtube.com/watch?v=G-UDHc2UVOg) by Geoffre Poore (https://github.com/gpoore/pythontex).
 
 - [Dexy and Docker for Scientific Reproducibility](https://www.youtube.com/watch?v=qFd04rA8lp0) by Ana Nelson. (https://github.com/ananelson/scipy2015)
 
