@@ -1,0 +1,63 @@
+%%Example found at https://gist.github.com/Cadair/5f66da0c4d14055836b2
+
+\documentclass[]{article}
+
+\usepackage{pythontex}
+
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{float}
+
+%opening
+\title{An Example of Astropy and PythonTeX Integration}
+\author{Stuart Mumford}
+
+\begin{pythontexcustomcode}{py}
+import sys
+
+import numpy as np
+
+import matplotlib
+
+matplotlib.use('pgf')
+
+matplotlib.rc('text', usetex=True)
+matplotlib.rc('font', family='serif')
+matplotlib.rc('font', size=14.0)
+matplotlib.rc('font', weight='normal')
+matplotlib.rc('legend', fontsize=14.0)
+matplotlib.rc("pgf", texsystem="pdflatex")
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+
+\end{pythontexcustomcode}
+
+\begin{document}
+
+\maketitle
+
+\section{Basic PythonTeX}
+
+The basic PythonTeX environments are \verb|\begin{pycode}| and \verb|\py|. \verb|pycode| is a block environment for including Python code, \verb|\py| is a inline output environment, for displaying output.
+
+A simple example of both is to create a variable in a \verb|pycode| environment and then inline it in the text using \verb|\py|:
+
+\begin{pyverbatim}
+\begin{pycode}
+import astropy.units as u
+
+myquantity = 100 * u.kg/u.m**2
+\end{pycode}
+\end{pyverbatim}
+
+\begin{pycode}
+import astropy.units as u
+
+myquantity = 100 * u.kg/u.m**2
+\end{pycode}
+
+You can then include this variable in a sentence using \verb~\py|myquantity|~. The density of Astropy is \py|myquantity|. Quantity has a little feature which is useful here: \verb~\py|myquantity_repr_latex_()|~ gives \py|myquantity._repr_latex_()|.
+
+
+\end{document}
