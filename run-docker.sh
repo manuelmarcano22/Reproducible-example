@@ -1,7 +1,7 @@
 set -e
 
 ### "build"
-export USERNAME=reproducibile
+export USERNAME=reproducible
 export IMAGENAME=base
 docker build -t $USERNAME/$IMAGENAME .
 
