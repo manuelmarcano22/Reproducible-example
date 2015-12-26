@@ -31,7 +31,6 @@ The list of commands can be run executing the file *run-docker.sh*.
 `bash run-docker.sh` 
 
 or
-
 ```bash
 chmod +x run-docker.sh
 ./run-docker.sh
@@ -49,7 +48,9 @@ sudo latexmk -r latexmkrc -pdf astropyexample.tex
 The `-r` flag is telling latexmk to use an specific configuration file.
 
 
-astropyexample is a section of  a .tex [file](https://gist.github.com/Cadair/5f66da0c4d14055836b2) created by [Stuard Mumford](https://github.com/Cadair) showing a few functionalties of PythonTex with astropy. This will create a pdf called *astropyexample.pdf*.  For a more detalied example see the [PythonTeX repository](https://github.com/gpoore/pythontex) and the gallery.
+astropyexample is a section of  a [.tex file](https://gist.github.com/Cadair/5f66da0c4d14055836b2) created by [Stuard Mumford](https://github.com/Cadair) showing a few functionalties of PythonTex with astropy. This will create a pdf called *astropyexample.pdf*.  For a more detalied example see the [PythonTeX repository](https://github.com/gpoore/pythontex) and the gallery.
+
+To see the pdf just do `evince astropyexample.pdf`.
 
 ## Exiting the Docker
 
