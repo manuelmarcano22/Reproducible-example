@@ -10,6 +10,9 @@ For great resources on how to do reproducible research with Python see the video
 
 - [Reproducible Science: Walking the Walk](https://youtu.be/EzX7MN_bzqg?list=PLIyfHkjEDSOEBhovULDAQtVje6toLVhP_) by Matthew McCormick et al. (https://github.com/reproducible-research/scipy-tutorial-2014).
 
+- [Docker for Improved Reproducibility of Scientific Python Analyses ](https://www.youtube.com/watch?v=7gwCsQJKWJY) by Matthew McCormick.
+
+
 ## Building the Docker Image
 
 This is build from the instruction given in the file called *Dockerfile*. 
