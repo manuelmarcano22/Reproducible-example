@@ -1,8 +1,8 @@
 set -e
 
 ### "build"
-export USERNAME=reproducible
-export IMAGENAME=base
+export USERNAME=manuelmarcano22
+export IMAGENAME=reproducible
 docker build -t $USERNAME/$IMAGENAME .
 
 ### Run the container and mount your documents

@@ -17,7 +17,7 @@ For great resources on how to do reproducible research with Python see the video
 
 This is build from the instruction given in the file called *Dockerfile*. 
 
-`docker build -t reproducible/base`
+`docker build -t manuelmarcano22/reproducible`
 
 This will create a container with an Ubuntu machine with the necessary packages.
 
@@ -25,7 +25,7 @@ This will create a container with an Ubuntu machine with the necessary packages.
 
 We can launch the image and open a shell with the  flags `-i -t`. 
 
-`docker run -i -t reproducible/base /bin/bash`
+`docker run -i -t manuelmarcano22/reproducible /bin/bash`
 
 But we need a few extra options and use `xhost` to be able to see the pdf. 
 
