@@ -1,6 +1,7 @@
-### "from https://github.com/ananelson/scipy2015"
 FROM ubuntu:latest
 MAINTAINER Ana Nelson <ana@ananelson.com>
+### "from https://github.com/ananelson/scipy2015"
+
 
 ### "localedef"
 RUN locale-gen en_US.UTF-8
